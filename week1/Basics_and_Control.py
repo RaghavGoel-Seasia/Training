@@ -40,7 +40,7 @@ def feed():
 
             try:
                 grade = float(grade_input)
-                if abs(grade) == float(inf):
+                if abs(grade) == float('inf'):
                         raise ValueError
                 student_data[name].append(round(grade, 2))
             except ValueError:
