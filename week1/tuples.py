@@ -1,4 +1,6 @@
-tuple2 = (1, 4, 2, 7, 8)  # Use parentheses to define a tuple
+#Tuples
+
+tuple2 = (1, 4, 2, 7, 8)  # Use round braces to define a tuple
 
 def find_min_max(tup):
     # Sort the tuple by converting it to a list
@@ -13,5 +15,5 @@ def find_min_max(tup):
     # Return both values as a tuple
     return (max_val, second_smallest)
 
-# Test the function
+#Function call
 print(find_min_max(tuple2))
