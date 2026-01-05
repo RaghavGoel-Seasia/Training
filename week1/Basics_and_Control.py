@@ -9,7 +9,7 @@ def feed():
     while True:
         name = input("Enter student name: ").strip()
         while "  " in name:
-            name =name.replace("  "," ")
+            name = name.replace("  "," ")
 
         if not name:
             break  # stop when user enters a blank name
