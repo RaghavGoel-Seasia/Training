@@ -1,18 +1,24 @@
 student_data = {}
 templist = []
+
 # Allowed characters for names
 valid_chars = "abcdefghijklmnopqrstuvwxyz .'-"
+
 
 def feed():
     print("Enter students. Leave name empty to stop.")
 
+
     while True:
         name = input("Enter student name: ").strip()
+
+        # Purging double whitespaces in name
         while "  " in name:
             name = name.replace("  "," ")
 
         if not name:
             break  # stop when user enters a blank name
+
 
         # Check name has only allowed characters
         ok = True
@@ -25,7 +31,7 @@ def feed():
             print("Invalid name. Use letters/spaces/dot/hyphen/apostrophe.")
             continue
 
-        # Make the name look nice (title case)
+        # Fix capitalisation (title case)
         name = name.title()
 
         # Create the student entry if it doesn't exist
