@@ -1,4 +1,3 @@
-a = range(10)
+a = 'snot'
 
-for i in a:
-    print(i)
+print('nots' in 'snot')
