@@ -100,12 +100,13 @@ class Member:
 
 def borrow_any(book,member):
 
-    if len(member.borrowed_books) >=3:
-        print(f"A maximum of 3 books can be borrowed!" )
-    elif book.borrow():
-        member.borrowed_books.append(book)
-        print(f"{member.name} borrowed {book.title}")
+    if book.borrow():
+        if member.borrow_book(book):
+            print("Book has been borrowed successfully!")
+
+        else:
+            print(f"Member {member.name} can't borrow {book.title}!")
 
     else:
-        print("Book couldn't be borrowed!")
+        print(f"{book.title} can't be borrowed!")
     
