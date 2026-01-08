@@ -1,6 +1,8 @@
 import numpy as np
 
-a = np.arange(15).reshape(3,5)
+a = np.arange(32).reshape(4,1,8)
 
-print(a)
-print(a.ndim)
+
+b = np.arange(48).reshape(1,6,8)
+
+print((a*b).shape)
