@@ -1,8 +1,9 @@
 import numpy as np
 
-a = np.arange(32).reshape(4,1,8)
+b = np.arange(120).reshape(5,4,1,1,2,3)
 
 
-b = np.arange(48).reshape(1,6,8)
-
-print((a*b).shape)
+#print(b.shape)
+#print(b)
+rng = np.random.default_rng()
+print(rng.random((3,4,2,5), dtype = np.int64))
