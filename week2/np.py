@@ -12,9 +12,10 @@ a = np.arange(30).reshape(5,6)
 
 # print(a[[1,3]])
 # print(a[np.ix_([1,3],[2,4])])
-a = a[1:4, [2,4]]
+# a = a[0:4, [1, 3]]
+# print(a.shape)
 
-print(a)
+print(np.ix_(a>20, a>5))
 
 
 
